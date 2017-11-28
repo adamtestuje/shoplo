@@ -20,7 +20,7 @@ class DataStore():
         }
         merchant["store_normalized"] = self.normalize_store_name(merchant["store_name"])
         self.last_merchant = merchant
-        print "Merchant: " + str(merchant)  # For debugging. Obviously this should be sent to logge stdout.
+        print "Merchant: " + str(merchant)  # For debugging. Obviously this should be sent to logger instead of stdout.
         return merchant
 
     def generate_product(self):
