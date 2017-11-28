@@ -14,7 +14,7 @@ class TestSuite(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        register_page = RegisterPage(Drivers.get_driver('chrome'))
+        register_page = RegisterPage(cls.driver)
         register_page.register_new_user(cls.merchant)
         register_page.close()
 
